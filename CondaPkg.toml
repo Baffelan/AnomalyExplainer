@@ -1,0 +1,6 @@
+[deps]
+tiktoken = ""
+openai = ""
+langchain = ""
+yfinance = ""
+transformers = ""
