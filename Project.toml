@@ -5,7 +5,9 @@ version = "1.0.0-DEV"
 
 [deps]
 CondaPkg = "992eb4ea-22a4-4c89-a5bb-47a3300528ab"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
 Distances = "b4f34e82-e78d-54a5-968a-f98e89d6e8f7"
+IOM_newsAPI_query = "2f70e6e1-4b7e-452a-8221-497046ae2690"
 JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
 LibPQ = "194296ae-ab2e-5f79-8cd4-7183a0a5a0d1"
 Octo = "16905944-f982-529b-abb2-b839f98f160b"
