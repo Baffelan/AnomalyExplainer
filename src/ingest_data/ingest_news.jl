@@ -6,11 +6,13 @@ Given a `question`, set of `keywords`, and `dates`, will try to collect articles
 - `dates::AbstractVector{Date}`: A range of dates for collecting articles. 
 """
 function ingest_news(keywords::AbstractVector, dates::Base.AbstractVecOrTuple{Date})
-    user = Dict("keywords"=>Dict("keywords"=>keywords, "locations"=>["United_States"], "languages"=>["eng"]))
-    arts = query_newsapi(user, dates, 100, "SocialScore")
+    user = Dict("keywords"=>Dict("keywords"=>keywords, "locations"=>"https://en.wikipedia.org/wiki/United_States", "languages"=>"eng"))
+    arts = query_newsapi(user, dates, 5, "SocialScore")
+
+    # TODO:
     # chunkise_text()
     # save_to_db()
-    return arts
+    return arts[1:50]
 end
 
-ingest_news(["amazon"], (today()-Day(2), today()))
+
