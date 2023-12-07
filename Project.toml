@@ -5,6 +5,7 @@ version = "1.0.0-DEV"
 
 [deps]
 CondaPkg = "992eb4ea-22a4-4c89-a5bb-47a3300528ab"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
 Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
 Distances = "b4f34e82-e78d-54a5-968a-f98e89d6e8f7"
 IOM_newsAPI_query = "2f70e6e1-4b7e-452a-8221-497046ae2690"
