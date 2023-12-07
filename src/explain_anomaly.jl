@@ -7,10 +7,9 @@ This is the main function in this package.
 - `keywords::AbstractVector`: A list of keywords for collecting articles.
 - `dates::AbstractVector{Date}`: A range of dates for collecting articles. 
 """
-function explain_anomaly(question::String, keywords::AbstractVector, dates::AbstractVector{Date})
-    injest_news(keywords, dates)
-    query = add_context(question, keywords, dates)
-
-    output = explain(query)
+function explain_anomaly(question::String, keywords::AbstractVector, dates::Base.AbstractVecOrTuple{Date})
+    ingest_news(keywords, dates)
+    query, articles = get_context(question, keywords, dates)
+    output = explain.([query], articles)
     return output
 end
