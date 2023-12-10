@@ -1,10 +1,11 @@
 """
-Runs the llm query.
+Runs the llm `query`` with `article` inserted.
 
 # Arguments
 - `query::String`: The query string for the llm to answer.
+- `article::String`: The article being analysed
 """
-function explain(query, article)
+function explain(query::String, article::String)
     exp_tool = pyimport("explainer_tool")
     println(length(article))
 
