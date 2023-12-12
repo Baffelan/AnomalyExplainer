@@ -1,4 +1,4 @@
-module Anomaly_Explainer
+module AnomalyExplainer
     using PythonCall
     using CondaPkg
     using DataFrames
